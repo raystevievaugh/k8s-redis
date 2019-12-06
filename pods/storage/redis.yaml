@@ -12,8 +12,15 @@ spec:
     volumeMounts:
     - name: redis-storage
       mountPath: /data/redis
+    volumeMounts:
+    - name: redis-storage-local
+      mountPath: /data/local
   volumes:
   - name: redis-storage
     hostPath:
       path: /assets/data
+      type: Directory
+  - name: redis-storage-local
+    hostPath:
+      path: code/local
       type: Directory
