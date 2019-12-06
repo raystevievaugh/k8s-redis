@@ -11,7 +11,9 @@ spec:
       name: redis-db
     volumeMounts:
     - name: redis-storage
-      mountPath: /assets/redis
+      mountPath: /data/redis
   volumes:
   - name: redis-storage
-    emptyDir: {}
+    hostPath:
+      path: /assets/redis
+      type: Directory
