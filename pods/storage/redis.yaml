@@ -8,7 +8,7 @@ spec:
     image: redis
     volumeMounts:
     - name: redis-storage
-      mountPath: /data/redis
+      mountPath: /assets/redis
   volumes:
   - name: redis-storage
     emptyDir: {}
