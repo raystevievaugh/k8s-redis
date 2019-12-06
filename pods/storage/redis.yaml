@@ -15,5 +15,5 @@ spec:
   volumes:
   - name: redis-storage
     hostPath:
-      path: /assets/redis
+      path: /assets/data
       type: Directory
