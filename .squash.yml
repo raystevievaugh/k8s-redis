@@ -1,0 +1,7 @@
+deployments:
+  k8s:
+    kubernetes_manifest: ./pods/storage/redis.yaml
+    deployment_type: kubernetes
+    kubernetes_default_pod: redis
+    port_forwarding: 6379:6379
+    check_service_ports: 6379
