@@ -6,3 +6,4 @@ deployments:
     use_kubernetes_registry: true
     port_forwarding: 6379:6379
     check_service_ports: 6379
+    copy_files_build_process: /assets/smth ~/code/local
