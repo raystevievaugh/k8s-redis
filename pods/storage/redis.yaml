@@ -22,5 +22,5 @@ spec:
       type: Directory
   - name: redis-storage-local
     hostPath:
-      path: code/local
+      path: ~/code/local
       type: Directory
