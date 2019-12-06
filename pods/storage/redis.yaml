@@ -7,8 +7,7 @@ spec:
   - name: redis
     image: redis
     ports:
-    - port: 6379
-      targetPort: 6379
+    - containerPort: 6379
       name: redis-db
     volumeMounts:
     - name: redis-storage
